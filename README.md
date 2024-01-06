@@ -1,5 +1,6 @@
 # pyvenv-clone
-
+Pyevnv clone is a script that allows Python's venv environment to run independently. 
+pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚本。
 ## Overview 
 - Pyevnv clone is a script that allows Python's venv environment to run independently. It automatically obtains and configures relevant paths and generates the correct pyvenv. cfg files are used to adapt to the needs of pyvenv, so that pyvenv can run smoothly. 
 - Currently, it only runs under Windows. 

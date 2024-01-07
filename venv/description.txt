@@ -1,0 +1,2 @@
+This directory stores the entire directory and files under the virtual environment directory created by Python venv, which your project depends on.
+此目录存放你的项目所依赖的python venv 建立的虚拟环境目录之下的整个目录和文件。

@@ -10,11 +10,11 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
    - src               source files for your project 
    - venv              Python All directories and files of virtual environment created by venv
       - Scripts
-         - activate.bat    The revision of activate. bat created by venv .
+         - activate_new.bat    The revision of activate. bat created by venv .
 ## Script Description 
-- run.bat calls activate Bat and the original deactivate Bat.
+- run.bat calls activate_new.Bat and the original deactivate.Bat.
 - run.bat automatically generates the correct miss v2/venv/pyvenv. cfg
-- Modification of activate.bat created by pyvenv
+- The modification of the activate_new.bat is relative to the activate.bat created by pyvenv 
 	- Change line 11 to: set VIRTUAL_ ENV=%~dp0 
 	- Change lines 18 and 27 to use the first command line parameter passed in as the prompt for venv. 
 		- 18 set PROMPT=(% 1) 
@@ -27,8 +27,8 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
 - Install the Python version used in your project to a new directory. After installation is complete, copy the complete directories and files from that directory to the Python 3 subdirectory of pyvenv clone.
 - Modify run BAT, usually you only need to modify the two lines in Section 1.
 - Run run Bat, observe if the project can run normally.
-- Congratulations! Your project has received a green version of the installation package.
-- 
+- Congratulations! You have received a green version of the project.
+
 ## 概览
 - pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚本。它通过自动获取和配置相关路径和生成正确的 pyvenv. cfg 文件，来适配 pyvenv 的需要，从而使得 pyvenv 能顺利运行。
 - 目前只在 windows 下运行。
@@ -38,10 +38,10 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
    - src               你的项目的源文件。
    - venv              python venv 建立的虚拟环境下的所有目录和文件。
       - Scripts
-         - activate.bat    pyvenv 的 activate. bat 的改版。
+         - activate_new.bat    pyvenv 的 activate. bat 的改版。
  ## 脚本说明
-- run. bat 调用 activate. bat 和原版的 deactivate. bat 
--  pyvenv 创建的activate. bat 的修改 
+- run.bat 调用 activate_new.bat 和原版的 deactivate.bat 
+- activate_new.bat相对于pyvenv 创建的activate. bat 的修改 
 	- 11 行改为了：set VIRTUAL_ENV=%~dp0\..
 	- 18，27 行改为使用传入的第一个命令行参数作为 venv 的提示。
 		 - 18 set PROMPT=(%1) ...
@@ -54,4 +54,4 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
 - 安装你的项目所使用 python 版本到一个新的目录，安装完成后，把该目录的文件完整地复制到 pyvenv-clone 的 python3 子目录。
 - 修改 run. bat，通常你只需要修改第 1 节的那两行。
 - 运行 run. bat，观察项目是否能正常运行。
-- 祝贺！你的项目获得了一个绿色版的安装包。
+- 祝贺！你获得了该项目一个绿色版的安装包。

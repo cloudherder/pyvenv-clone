@@ -1,0 +1,2 @@
+This directory stores the directories and files included in a clean installation of Python that is consistent with the version used in your project.
+此目录存放与你的项目使用版本一致的python的干净的安装所包含的目录和文件。

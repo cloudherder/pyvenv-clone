@@ -19,7 +19,7 @@ echo version = %pyver:~8,-1%>>%pyvenv_cfg%
 echo include-system-site-packages = false>>%pyvenv_cfg%
 
 :: 4.Activate venv and Run your project
-call "%VENV_SCRIPTS%\activate.bat"  %VENV_NAME%
+call "%VENV_SCRIPTS%\activate_new.bat"  %VENV_NAME%
 cd %VENV_DIR%\..\src
 %PYTHON%  %MAIN_SCRIPT%
 

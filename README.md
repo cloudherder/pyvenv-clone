@@ -20,6 +20,15 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
 		- 18 set PROMPT=(% 1) 
 		- 27 set VIRTUAL_ ENV_ PROMPT=(% 1) 
 
+## Usage
+- Download the pyvenv - clone package and unzip it.
+- Copy your project source code to the src subdirectory of pyvenv clone.
+- Copy the complete directory and files under the virtual environment directory created by the venv that your project depends on from the Python installation directory to the venv subdirectory of the pyvenv clone.
+- Install the Python version used in your project to a new directory. After installation is complete, copy the complete directories and files from that directory to the Python 3 subdirectory of pyvenv clone.
+- Modify run BAT, usually you only need to modify the two lines in Section 1.
+- Run run Bat, observe if the project can run normally.
+- Congratulations! Your project has received a green version of the installation package.
+- 
 ## 概览
 - pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚本。它通过自动获取和配置相关路径和生成正确的 pyvenv. cfg 文件，来适配 pyvenv 的需要，从而使得 pyvenv 能顺利运行。
 - 目前只在 windows 下运行。
@@ -38,4 +47,11 @@ pyevnv-clone 是一个使得 python venv 建立的环境可以独立运行的脚
 		 - 18 set PROMPT=(%1) ...
 		 - 27 set VIRTUAL_ENV_PROMPT=(%1)
  - run. bat 自动生成正确的 mist-v2/venv/pyvenv. cfg
- 
+ ## 使用方法
+- 下载 pyvenv-clone 包并解压。
+- 复制你的项目源代码到 pyvenv-clone 的  src 子目录。
+- 从 python 安装目录中，将你的项目所依赖的 venv 建立的虚拟环境目录之下的目录和文件完整地复制到 pyvenv-clone 的 venv 子目录。
+- 安装你的项目所使用 python 版本到一个新的目录，安装完成后，把该目录的文件完整地复制到 pyvenv-clone 的 python3 子目录。
+- 修改 run. bat，通常你只需要修改第 1 节的那两行。
+- 运行 run. bat，观察项目是否能正常运行。
+- 祝贺！你的项目获得了一个绿色版的安装包。

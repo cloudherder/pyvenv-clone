@@ -26,7 +26,7 @@ cd %VENV_DIR%\..\src
 :: 5.Add your Commands.e.g
 if %errorlevel% equ 0 (
     rem timeout /nobreak /t 5
-    start  http://127.0.0.1:7860/
+    rem start  http://127.0.0.1:7860/
 )
 
 :: 6.Deactivate venv
